@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('26.78.77.74',1234))
+s.connect(('0.0.0.0',1234)) #use the ip of the computer you want to connect!
 
 while True:
     msg = s.recv(1024)
