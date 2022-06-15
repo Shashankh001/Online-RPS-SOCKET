@@ -1,11 +1,11 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('0.0.0.0',1234)) #use the ip of the computer you want to connect!
+s.connect(('192.168.0.102',1234))
 
 while True:
-    msg = s.recv(1024)
-    f_msg = msg.decode("utf-8")
+    welcome_msg = s.recv(1024)
+    f_msg = welcome_msg.decode("utf-8")
     print(f_msg)
 
     g_input = str(input("Choose your object! [R, P, S]: "))
@@ -45,3 +45,4 @@ while True:
         print("You Lose")
         s.send(bytes("You Win", "utf-8"))
     
+    quit()
