@@ -2,7 +2,7 @@
 
 Lets explore this amazing code of rock paper scissors.
 
-Since this is a client-server based program, there will be two files:- `client.py` and `server.py`. The one whose computer shall be shutted down must be running `server.py`.
+Since this is a client-server based program, there will be two files:- `client.py` and `server.py`. 
 
 `server.py`
 ```py
